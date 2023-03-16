@@ -17,8 +17,25 @@
       text-align: left;
     }
 
-    .fontStep {
+    .inner-div {
+    }
+
+    .contentStep {
       opacity: 0.5;
+      font-size: 8px;
+      margin: 5px;
+      color: white;
+    }
+
+    .contentDetail {
+      font-weight: bold;
+      font-size: 12px;
+      color: white;
+    }
+
+    .btnContainer {
+      margin: 5px 10px 5px 5px;
+      padding: 10px;
     }
 
     .sidebarDetailButton {
@@ -44,7 +61,6 @@
       font-family: 'Ubuntu-Regular';
       line-height: 70%;
       font-size: 15px;
-      color: white;
     }
     @font-face {
       font-family: "Ubuntu-Regular";
@@ -53,90 +69,150 @@
 
     /* test */
     .main-container {
-      width: 1040px;
-      margin: 0 auto;
+      width: 90%;
+      display: flex;
     }
-    .container {
+
+    .navigator {
       display: inline-block;
       vertical-align: top;
       background: url("./assets/images/bg-sidebar-desktop.svg");
+      background-repeat: no-repeat;
       object-fit: cover;
       height: 568px;
-      width: 274px;
+      width: 400px;
       margin: 5px;
     }
+
+    .main {
+      width: 600px;
+      margin: 50 150 50 50;
+    }
+
+    .mainTitle {
+      margin-bottom: 50px;
+    }
+
     ul {
       list-style: none;
-      margin: 10px;
+      margin: 100 10 10 10;
+    }
+
+    .styleInput {
+      border-radius: 5px;
+      height: 40px;
+      width: 400px;
+      text-indent: 10px;
+      outline: 2px solid rgb(173, 173, 173);
+      border: none;
+    }
+
+    .marginNextStep {
+      margin: 120px 100px 100px 310px;
+    }
+
+    .btnNextStep {
+      background-color: navy;
+      color: white;
+      border-radius: 10px;
+      height: 30px;
+      width: 100px;
+      border-style: solid;
+      border: none;
     }
   </style>
 </head>
 <body>
 
-  <!-- Sidebar start -->
+  <div>
+    <div class="main-container">
 
-  <div class="main-container">
-    <div class="container">
-      <br><br><br>
-      <ul >
-        <li>
-          <div>
-            <button class="sidebarDetailButton">1</button>
-          </div>
-          <div>
-            <p class="fontStep">STEP 1</p>
-            <p>YOUR INFO</p>
-          </div>
-        </li>
+      <!-- Sidebar start -->
+      <div class="navigator">
+        <ul>
+          <li>
+            <div class="btnContainer">
+              <div>
+                <button class="sidebarDetailButton">1</button>
+              </div>
+              <div class="inner-div">
+                <p class="contentStep">STEP 1</p>
+                <p class="contentDetail">YOUR INFO</p>
+              </div>
+            </div>
+          </li>
 
-        <li>
-          <button class="sidebarDetailButton">2</button>
-          <div>
-            <p class="fontStep">STEP 2</p>
-            <p>SELECT PLAN</p>
-          </div>
-        </li>
+          <li>
+            <div class="btnContainer">
+              <div>
+                <button class="sidebarDetailButton">2</button>
+              </div>
+              <div class="inner-div">
+                <p class="contentStep">STEP 2</p>
+                <p class="contentDetail">SELECT PLAN</p>
+              </div>
+            </div>
+          </li>
 
-        <li>
-          <button class="sidebarDetailButton">3</button>
-          <div>
-            <p class="fontStep">STEP 3</p>
-            <p>ADD-ONS</p>
-          </div>
-        </li>
+          <li>
+            <div style="margin: 10px; padding: 10px">
+              <button class="sidebarDetailButton">3</button>
+              <div class="inner-div">
+                <p class="contentStep">STEP 3</p>
+                <p class="contentDetail">ADD-ONS</p>
+              </div>
+            </div>
+          </li>
 
-        <li>
-          <button class="sidebarDetailButton">4</button>
-          <div>
-            <p class="fontStep">STEP 4</p>
-            <p>SUMMARY</p>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
+          <li>
+            <div class="btnContainer">
+              <div>
+                <button class="sidebarDetailButton">4</button>
+              </div>
+              <div class="inner-div">
+                <p class="contentStep">STEP 4</p>
+                <p class="contentDetail">SUMMARY</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- Sidebar end -->
   
-  <!-- Sidebar end -->
+      <!-- Step 1 start -->
+      <div class="main">
+        <div class="mainTitle">
+          <h1 style="font-weight: bold;">Personal info</h1>
+          <p style="color: gray;">Please provide your name, email address, and phone number.</p>
+        </div>
+        <div>
+          <div>
+            <p>Name</p>
+            <input type="text" class="styleInput" placeholder="e.g. Stephen King"/>
+          </div>
+          <div>
+            <p>Email Address</p>
+            <input type="text" class="styleInput" placeholder="e.g. stephenking@lorem.com"/>
+          </div>
+          <div>
+            <p>Phone Number</p>
+            <input type="text" class="styleInput" placeholder="e.g. +1 234 567 890"/>
+          </div>
+        </div>
+        <div class="marginNextStep">
+          <button class="btnNextStep">Next Step</button>
+        </div>
+      </div>
+      <!-- Step 1 end -->
 
+
+    </div>
+    
+  </div>
   <div style="display: none">
 
-    <!-- Step 1 start -->
+
     
-    Personal info
-    Please provide your name, email address, and phone number.
-    
-    Name
-    e.g. Stephen King
-    
-    Email Address
-    e.g. stephenking@lorem.com
-    
-    Phone Number
-    e.g. +1 234 567 890
-    
-    Next Step
-    
-    <!-- Step 1 end -->
     
     <!-- Step 2 start -->
     
