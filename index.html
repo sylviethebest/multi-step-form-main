@@ -178,6 +178,70 @@
       justify-content: center;
     }
 
+    /* --- step 2 --- */
+
+    /* 2023-03-26, sypark, added step3 css */
+    .container-btnthree {
+      padding: 1px;
+      display: inline-block;
+    }
+
+    .btn-stepthree {
+      border-style: solid;
+      border-color: #C2C5CC;
+      border-radius: 10px;
+      border-width: 1px;
+      background-color: white;
+      height: 60px;
+      width: 500px;
+      padding: 10px;
+      margin: 10px 0px 10px 0px;
+      display: flex;
+      align-items: center;
+    }
+
+    .btn-stepthree:hover {
+      background-color: lavender;
+      border-color: purple;
+    }
+
+    .btn-stepthree-check {
+      background-color: black;
+      height: 10px;
+      width: 10px;
+      margin: 10px;
+    }
+
+    .btn-stepthree-name {
+      color: navy;
+      font-weight: bold;
+      font-size: 14px;
+      margin: 10px;
+    }
+
+    .btn-stepthree-desc {
+      color: #C2C5CC;
+      font-size: 14px;
+      margin: 10px;
+    }
+
+    .btn-stepthree-price {
+      color: purple;
+      text-align: left;
+      margin: 10px;
+    }
+
+    .btn-stepthree-container-left {
+      text-align: left;
+      width: 90%;
+    }
+
+    .btn-stepthree-container-right {
+
+    }
+
+    /* --- step 3 --- */
+
     .mainTitle {
       margin-bottom: 50px;
     }
@@ -200,6 +264,11 @@
       margin: 120px 100px 100px 310px;
     }
 
+    .btn-bottom-container {
+      position: relative;
+      height: 30%;
+    }
+
     .btn-nextstep {
       background-color: navy;
       color: white;
@@ -207,9 +276,13 @@
       height: 30px;
       width: 100px;
       border-style: solid;
+      border-width: 1px;
       border: none;
       float: right;
       vertical-align: bottom;
+      position:absolute; 
+      bottom:0px;
+      right: 0px;
     }
 
     .btn-goback {
@@ -218,10 +291,14 @@
       border-radius: 10px;
       height: 30px;
       width: 100px;
+      border-width: 1px;
       border-style: solid;
       border: none;
       float: left;
       vertical-align: bottom;
+      position:absolute; 
+      bottom:0px;
+
     }
 
     .main-title {
@@ -298,6 +375,92 @@
       <!-- Step 1 end -->
 
       <!-- Step 2 start -->
+      <!-- Step 2 end -->
+
+      <!-- Step 3 start -->
+      <!-- 2023-03-26, step 3 -->
+      <div class="stepthree">
+        <div class="mainTitle">
+          <h1 class="main-title">Pick add-ons</h1>
+          <p class="main-desc">Add-ons help enhance your gaming experience.</p>
+        </div>
+        <div>
+          <div class="container-stepthree">
+            <div class="btn-stepthree">
+              <input type="checkbox">
+              <div class="btn-stepthree-container-left">
+                <p class="btn-stepthree-name">Online service</p>
+                <p class="btn-stepthree-desc">Access to multiplayer games</p>
+              </div>
+              <div class="btn-stepthree-container-right">
+                <p class="btn-stepthree-price">+$1/mo</p>
+              </div>
+            </div>
+
+            <div class="btn-stepthree">
+              <input type="checkbox">
+              <div class="btn-stepthree-container-left">
+                <p class="btn-stepthree-name">Larger storage</p>
+                <p class="btn-stepthree-desc">Extra 1TB of cloud save</p>
+              </div>
+              <div class="btn-stepthree-right">
+                <p class="btn-stepthree-price">+$2/mo</p>
+              </div>
+            </div>
+            <div class="btn-stepthree">
+              <input type="checkbox">
+              <div class="btn-stepthree-container-left">
+                <p class="btn-stepthree-name">Customizable Profile</p>
+                <p class="btn-stepthree-desc">Custom theme on your profile</p>
+              </div>
+              <div class="btn-stepthree-right">
+                <p class="btn-stepthree-price">+$2/mo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="height: auto">
+
+        </div>
+        <div class="btn-bottom-container">
+          <button class="btn-goback">Go Back</button>
+          <button class="btn-nextstep">Next Step</button>
+        </div>
+      </div>
+      <!-- Step 3 end -->
+    </div>
+    
+  </div>
+  <div style="display: none">
+    
+
+      <!-- Step 1 start -->
+      <div class="main-stepone">
+        <div class="mainTitle">
+          <h1 class="main-title">Personal info</h1>
+          <p class="main-desc">Please provide your name, email address, and phone number.</p>
+        </div>
+        <div>
+          <div>
+            <p>Name</p>
+            <input type="text" class="styleInput" placeholder="e.g. Stephen King"/>
+          </div>
+          <div>
+            <p>Email Address</p>
+            <input type="text" class="styleInput" placeholder="e.g. stephenking@lorem.com"/>
+          </div>
+          <div>
+            <p>Phone Number</p>
+            <input type="text" class="styleInput" placeholder="e.g. +1 234 567 890"/>
+          </div>
+        </div>
+        <div class="container-btn">
+          <button class="btn-nextstep">Next Step</button>
+        </div>
+      </div>
+      <!-- Step 1 end -->
+
+      <!-- Step 2 start -->
       <!-- 2023-03-21, Step 2 -->
       <div class="steptwo">
         <div class="mainTitle">
@@ -340,46 +503,12 @@
             <p class="toggleSwitch-text">Yearly</p>
           </div>
         </div>
-        <div>
+        <div class="btn-bottom-container">
           <button class="btn-goback">Go Back</button>
           <button class="btn-nextstep">Next Step</button>
         </div>
       </div>
-    </div>
-    
-  </div>
-  <div style="display: none">
-    
-    Go Back
-    Next Step
-    
-    <!-- Step 2 end -->
-
-          <!-- Step 1 start -->
-          <div class="main-stepone">
-            <div class="mainTitle">
-              <h1 class="main-title">Personal info</h1>
-              <p class="main-desc">Please provide your name, email address, and phone number.</p>
-            </div>
-            <div>
-              <div>
-                <p>Name</p>
-                <input type="text" class="styleInput" placeholder="e.g. Stephen King"/>
-              </div>
-              <div>
-                <p>Email Address</p>
-                <input type="text" class="styleInput" placeholder="e.g. stephenking@lorem.com"/>
-              </div>
-              <div>
-                <p>Phone Number</p>
-                <input type="text" class="styleInput" placeholder="e.g. +1 234 567 890"/>
-              </div>
-            </div>
-            <div class="container-btn">
-              <button class="btn-nextstep">Next Step</button>
-            </div>
-          </div>
-          <!-- Step 1 end -->
+      <!-- Step 2 end -->
     
     <!-- Step 3 start -->
     
