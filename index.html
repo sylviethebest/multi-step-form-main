@@ -15,6 +15,7 @@
 
     body {
       text-align: left;
+      background-color: #ebf3fa;
     }
 
     .contentStep {
@@ -71,8 +72,10 @@
 
     /* test */
     .main-container {
-      width: 90%;
+      width: 1000px;
       display: flex;
+      background-color: #ffffff;
+      border-radius: 10px;
     }
 
     .navigator {
@@ -82,8 +85,8 @@
       background-repeat: no-repeat;
       object-fit: cover;
       height: 568px;
-      width: 400px;
-      margin: 5px;
+      width: 278px;
+      margin: 10px;
     }
 
     /* 2023-03-21, sypark, added step2 css */
@@ -91,13 +94,11 @@
     .main-stepone {
       width: 600px;
       margin: 50 150 50 50;
-      visibility: hidden;
     }
 
     .main-steptwo {
       width: 600px;
       margin: 50 150 50 50;
-      visibility: visible;
     }
 
     .btn-steptwo{
@@ -205,13 +206,6 @@
       border-color: purple;
     }
 
-    .btn-stepthree-check {
-      background-color: black;
-      height: 10px;
-      width: 10px;
-      margin: 10px;
-    }
-
     .btn-stepthree-name {
       color: navy;
       font-weight: bold;
@@ -242,7 +236,106 @@
 
     /* --- step 3 --- */
 
-    .mainTitle {
+    /* 2023-03-26, sypark, added step4 css */
+    .stepfour-container {
+      background-color: #f8f9fe;
+      border-radius: 10px;
+      height: 200px;
+      padding: 10px;
+    }
+    
+    .stepfour-plan-container {
+      color: navy;
+      font-size: 14px;
+      margin: 10px;
+      float: left;
+      width: 90%;
+      display: flex;
+    }
+    
+    .stepfour-plan-name {
+      text-align: left;
+      font-weight: bold;
+      color: #1c1866;
+      font-size: 14px;
+      width: 90%;
+    }
+    
+    .stepfour-plan-price {
+      color: #1c1866;
+      text-align: left;
+      font-weight: bold;
+      width: 10%;
+      display: flex;
+      align-items: center;
+    }
+    
+    .stepfour-change {
+      color: gray;
+      margin: 0 auto;
+      text-align: left;
+      font-weight: normal;
+    }
+    
+    .stepfour-additional-container {
+      color: grey;
+      font-size: 14px;
+      margin: 10px;
+      float: left;
+      width: 90%;
+      display: flex;
+    }
+
+    .stepfour-additional-name {
+      text-align: left;
+      font-weight: bold;
+      color: grey;
+      font-size: 14px;
+      width: 90%;
+    }
+
+    .stepfour-additional-price {
+      text-align: left;
+      font-weight: bold;
+      width: 10%;
+      align-items: center;
+    }
+
+    .stepfour-total-container {
+      float: left;
+      width: auto;
+      display: flex;
+      margin: 10px;
+      width: 90%;
+    }
+
+    .stepfour-total-name {
+      text-align: left;
+      font-weight: bold;
+      color: #C2C5CC;
+      font-size: 14px;
+      width: 90%;
+    }
+
+    .stepfour-total-price {
+      text-align: left;
+      font-weight: bold;
+      color: #625aff;
+      width: 10%;
+      align-items: center;
+    }
+
+    .stepfour-hr {
+      width: 100%;
+      color: #C2C5CC;
+      border-style: solid;
+      border-width: 0.1px;
+      margin: 0px;
+    }
+
+    /* --- step 4 --- */
+
+    .main-title-container {
       margin-bottom: 50px;
     }
 
@@ -270,7 +363,7 @@
     }
 
     .btn-nextstep {
-      background-color: navy;
+      background-color: #483eff;
       color: white;
       border-radius: 10px;
       height: 30px;
@@ -283,6 +376,7 @@
       position:absolute; 
       bottom:0px;
       right: 0px;
+      font-family: 'Ubuntu-Regular';
     }
 
     .btn-goback {
@@ -293,12 +387,12 @@
       width: 100px;
       border-width: 1px;
       border-style: solid;
-      border: none;
       float: left;
       vertical-align: bottom;
       position:absolute; 
       bottom:0px;
-
+      left: 0px;
+      font-family: 'Ubuntu-Regular';
     }
 
     .main-title {
@@ -311,11 +405,15 @@
       color: #C2C5CC;
       margin: 0;
     }
+
+    .content-container {
+      margin: 20px 20px 20px 60px;
+    }
   </style>
 </head>
 <body>
 
-  <div>
+  <div style="display: flex; justify-content: center; ">
     <div class="main-container">
 
       <!-- Sidebar start -->
@@ -378,56 +476,52 @@
       <!-- Step 2 end -->
 
       <!-- Step 3 start -->
-      <!-- 2023-03-26, step 3 -->
-      <div class="stepthree">
-        <div class="mainTitle">
-          <h1 class="main-title">Pick add-ons</h1>
-          <p class="main-desc">Add-ons help enhance your gaming experience.</p>
-        </div>
-        <div>
-          <div class="container-stepthree">
-            <div class="btn-stepthree">
-              <input type="checkbox">
-              <div class="btn-stepthree-container-left">
-                <p class="btn-stepthree-name">Online service</p>
-                <p class="btn-stepthree-desc">Access to multiplayer games</p>
-              </div>
-              <div class="btn-stepthree-container-right">
-                <p class="btn-stepthree-price">+$1/mo</p>
-              </div>
-            </div>
+      <!-- Step 3 end -->
 
-            <div class="btn-stepthree">
-              <input type="checkbox">
-              <div class="btn-stepthree-container-left">
-                <p class="btn-stepthree-name">Larger storage</p>
-                <p class="btn-stepthree-desc">Extra 1TB of cloud save</p>
+      <div class="content-container">
+        <!-- Step 4 start -->
+        <div class="stepfour">
+          <div class="main-title-container">
+            <h1 class="main-title">Finishing up</h1>
+            <p class="main-desc">Double-check everything looks OK before confirming.</p>
+          </div>
+          <!-- Dynamically add subscription and add-on selections here -->
+          <div>
+            <div class="stepfour-container">
+              <div class="stepfour-plan-container">
+                <div class="stepfour-plan-name">
+                  <p>Arcade</p>
+                  <a href="" class="stepfour-plan-change">Change</a>
+                </div>
+                <div class="stepfour-plan-price">
+                  <p>9/mo</p>
+                </div>
               </div>
-              <div class="btn-stepthree-right">
-                <p class="btn-stepthree-price">+$2/mo</p>
+              <hr class="stepfour-hr">
+              <div class="stepfour-additional-container">
+                <p class="stepfour-additional-name">Online Service</p>
+                <p class="stepfour-additional-price">1/mo</p>
               </div>
             </div>
-            <div class="btn-stepthree">
-              <input type="checkbox">
-              <div class="btn-stepthree-container-left">
-                <p class="btn-stepthree-name">Customizable Profile</p>
-                <p class="btn-stepthree-desc">Custom theme on your profile</p>
+            <div class="stepfour-total-container">
+              <div class="stepfour-total-name">
+                Total (per month/year)
               </div>
-              <div class="btn-stepthree-right">
-                <p class="btn-stepthree-price">+$2/mo</p>
+              <div class="stepfour-total-price">
+                +12/mo
               </div>
             </div>
           </div>
-        </div>
-        <div style="height: auto">
-
-        </div>
-        <div class="btn-bottom-container">
-          <button class="btn-goback">Go Back</button>
-          <button class="btn-nextstep">Next Step</button>
+          <div class="btn-bottom-container">
+            <button class="btn-goback">Go Back</button>
+            <button class="btn-nextstep">Confirm</button>
+          </div>
         </div>
       </div>
-      <!-- Step 3 end -->
+        
+    
+    
+      <!-- Step 4 end -->
     </div>
     
   </div>
@@ -436,7 +530,7 @@
 
       <!-- Step 1 start -->
       <div class="main-stepone">
-        <div class="mainTitle">
+        <div class="main-title-container">
           <h1 class="main-title">Personal info</h1>
           <p class="main-desc">Please provide your name, email address, and phone number.</p>
         </div>
@@ -463,7 +557,7 @@
       <!-- Step 2 start -->
       <!-- 2023-03-21, Step 2 -->
       <div class="steptwo">
-        <div class="mainTitle">
+        <div class="main-title-container">
           <h1 class="main-title">Select your plan</h1>
           <p class="main-desc">You have the option of monthly or yearly billing.</p>
         </div>
@@ -510,27 +604,54 @@
       </div>
       <!-- Step 2 end -->
     
-    <!-- Step 3 start -->
-    
-    Pick add-ons
-    Add-ons help enhance your gaming experience.
-    
-    Online service
-    Access to multiplayer games
-    +$1/mo
-    
-    Larger storage
-    Extra 1TB of cloud save
-    +$2/mo
-    
-    Customizable Profile
-    Custom theme on your profile
-    +$2/mo
-    
-    Go Back
-    Next Step
-    
-    <!-- Step 3 end -->
+      <!-- Step 3 start -->
+      <!-- 2023-03-26, step 3 -->
+      <div class="stepthree">
+        <div class="main-title-container">
+          <h1 class="main-title">Pick add-ons</h1>
+          <p class="main-desc">Add-ons help enhance your gaming experience.</p>
+        </div>
+        <div>
+          <div class="container-stepthree">
+            <div class="btn-stepthree">
+              <input type="checkbox">
+              <div class="btn-stepthree-container-left">
+                <p class="btn-stepthree-name">Online service</p>
+                <p class="btn-stepthree-desc">Access to multiplayer games</p>
+              </div>
+              <div class="btn-stepthree-container-right">
+                <p class="btn-stepthree-price">+$1/mo</p>
+              </div>
+            </div>
+
+            <div class="btn-stepthree">
+              <input type="checkbox">
+              <div class="btn-stepthree-container-left">
+                <p class="btn-stepthree-name">Larger storage</p>
+                <p class="btn-stepthree-desc">Extra 1TB of cloud save</p>
+              </div>
+              <div class="btn-stepthree-right">
+                <p class="btn-stepthree-price">+$2/mo</p>
+              </div>
+            </div>
+            <div class="btn-stepthree">
+              <input type="checkbox">
+              <div class="btn-stepthree-container-left">
+                <p class="btn-stepthree-name">Customizable Profile</p>
+                <p class="btn-stepthree-desc">Custom theme on your profile</p>
+              </div>
+              <div class="btn-stepthree-right">
+                <p class="btn-stepthree-price">+$2/mo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-bottom-container">
+          <button class="btn-goback">Go Back</button>
+          <button class="btn-nextstep">Next Step</button>
+        </div>
+      </div>
+      <!-- Step 3 end -->
     
     <!-- Step 4 start -->
     
