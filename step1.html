@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Multi-step form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <div class="main-container">
+
+      <!-- Sidebar start -->
+      <div class="navigator">
+        <ul>
+          <li>
+            <div class="nav-container-detail">
+                <button class="nav-btn">1</button>
+                <div class="nav-btn-container">
+                  <p class="nav-btn-step">STEP 1</p>
+                  <p class="nav-btn-title">YOUR INFO</p>
+                </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="nav-container-detail">
+                <button class="nav-btn">2</button>
+                <div class="nav-btn-container">
+                    <p class="nav-btn-step">STEP 2</p>
+                    <p class="nav-btn-title">SELECT PLAN</p>
+                </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="nav-container-detail">
+              <button class="nav-btn">3</button>
+              <div class="nav-btn-container">
+                <p class="nav-btn-step">STEP 3</p>
+                <p class="nav-btn-title">ADD-ONS</p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="nav-container-detail">
+                <button class="nav-btn">4</button>
+                <div class="nav-btn-container">
+                  <p class="nav-btn-step">STEP 4</p>
+                  <p class="nav-btn-title">SUMMARY</p>
+                </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- Sidebar end -->
+      
+      <div class="content-container">
+      <!-- Step 1 start -->
+      <div class="main-stepone">
+        <div class="main-title-container">
+          <h1 class="main-title">Personal info</h1>
+          <p class="main-desc">Please provide your name, email address, and phone number.</p>
+        </div>
+        <div>
+          <div>
+            <p>Name</p>
+            <input type="text" class="styleInput" placeholder="e.g. Stephen King"/>
+          </div>
+          <div>
+            <p>Email Address</p>
+            <input type="text" class="styleInput" placeholder="e.g. stephenking@lorem.com"/>
+          </div>
+          <div>
+            <p>Phone Number</p>
+            <input type="text" class="styleInput" placeholder="e.g. +1 234 567 890"/>
+          </div>
+        </div>
+        <div class="container-btn">
+          <button class="btn-nextstep">Next Step</button>
+        </div>
+      </div>
+      <!-- Step 1 end -->
+      </div>
+    </div>
+    
+  </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Multi-step form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <div class="main-container">
+      <!-- Sidebar start -->
+      <div class="navigator-container">
+        <div class="navigator">
+            <ul>
+            <li>
+                <div class="nav-container-detail">
+                    <button class="nav-btn">1</button>
+                    <div class="nav-btn-container">
+                    <p class="nav-btn-step">STEP 1</p>
+                    <p class="nav-btn-title">YOUR INFO</p>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="nav-container-detail">
+                    <button class="nav-btn">2</button>
+                    <div class="nav-btn-container">
+                        <p class="nav-btn-step">STEP 2</p>
+                        <p class="nav-btn-title">SELECT PLAN</p>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="nav-container-detail">
+                <button class="nav-btn">3</button>
+                <div class="nav-btn-container">
+                    <p class="nav-btn-step">STEP 3</p>
+                    <p class="nav-btn-title">ADD-ONS</p>
+                </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="nav-container-detail">
+                    <button class="nav-btn">4</button>
+                    <div class="nav-btn-container">
+                    <p class="nav-btn-step">STEP 4</p>
+                    <p class="nav-btn-title">SUMMARY</p>
+                    </div>
+                </div>
+            </li>
+            </ul>
+        </div>
+      </div>
+      <!-- Sidebar end -->
+
+      <div class="content-container">
+        <!-- Step 4 start -->
+        <div class="stepfour">
+          <div class="main-title-container">
+            <h1 class="main-title">Finishing up</h1>
+            <p class="main-desc">Double-check everything looks OK before confirming.</p>
+          </div>
+          <!-- Dynamically add subscription and add-on selections here -->
+          <div>
+            <div class="stepfour-container">
+              <div class="stepfour-plan-container">
+                <div class="stepfour-plan-name">
+                  <p>Arcade</p>
+                  <a href="" class="stepfour-plan-change">Change</a>
+                </div>
+                <div class="stepfour-plan-price">
+                  <p>9/mo</p>
+                </div>
+              </div>
+              <hr class="stepfour-hr">
+              <div class="stepfour-additional-container">
+                <p class="stepfour-additional-name">Online Service</p>
+                <p class="stepfour-additional-price">1/mo</p>
+              </div>
+            </div>
+            <div class="stepfour-total-container">
+              <div class="stepfour-total-name">
+                Total (per month/year)
+              </div>
+              <div class="stepfour-total-price">
+                +12/mo
+              </div>
+            </div>
+          </div>
+          <div class="btn-bottom-container">
+            <button class="btn-goback">Go Back</button>
+            <button class="btn-nextstep">Confirm</button>
+          </div>
+        </div>
+      </div>
+      <!-- Step 4 end -->
+    </div>
+    
+  </div>
+  <div style="display: none">
+    
+    <!-- Step 5 start -->
+    
+    Thank you!
+    
+    Thanks for confirming your subscription! We hope you have fun 
+    using our platform. If you ever need support, please feel free 
+    to email us at support@loremgaming.com.
+    
+    <!-- Step 5 end -->
+  </div>
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>

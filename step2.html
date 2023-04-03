@@ -13,144 +13,57 @@
 </head>
 <body>
 
-  <div style="display: flex; justify-content: center; ">
+  <div class="container">
     <div class="main-container">
-
       <!-- Sidebar start -->
-      <div class="navigator">
-        <ul>
-          <li>
-            <div class="btnContainer">
-              <div>
-                <button class="sidebarDetailButton">1</button>
-              </div>
-              <div class="inner-div">
-                <p class="contentStep">STEP 1</p>
-                <p class="contentDetail">YOUR INFO</p>
-              </div>
-            </div>
-          </li>
+      <div class="navigator-container">
+        <div class="navigator">
+            <ul>
+            <li>
+                <div class="nav-container-detail">
+                    <button class="nav-btn">1</button>
+                    <div class="nav-btn-container">
+                    <p class="nav-btn-step">STEP 1</p>
+                    <p class="nav-btn-title">YOUR INFO</p>
+                    </div>
+                </div>
+            </li>
 
-          <li>
-            <div class="btnContainer">
-              <div>
-                <button class="sidebarDetailButton">2</button>
-              </div>
-              <div class="inner-div">
-                <p class="contentStep">STEP 2</p>
-                <p class="contentDetail">SELECT PLAN</p>
-              </div>
-            </div>
-          </li>
+            <li>
+                <div class="nav-container-detail">
+                    <button class="nav-btn">2</button>
+                    <div class="nav-btn-container">
+                        <p class="nav-btn-step">STEP 2</p>
+                        <p class="nav-btn-title">SELECT PLAN</p>
+                    </div>
+                </div>
+            </li>
 
-          <li>
-            <div style="margin: 10px; padding: 10px">
-              <button class="sidebarDetailButton">3</button>
-              <div class="inner-div">
-                <p class="contentStep">STEP 3</p>
-                <p class="contentDetail">ADD-ONS</p>
-              </div>
-            </div>
-          </li>
+            <li>
+                <div class="nav-container-detail">
+                <button class="nav-btn">3</button>
+                <div class="nav-btn-container">
+                    <p class="nav-btn-step">STEP 3</p>
+                    <p class="nav-btn-title">ADD-ONS</p>
+                </div>
+                </div>
+            </li>
 
-          <li>
-            <div class="btnContainer">
-              <div>
-                <button class="sidebarDetailButton">4</button>
-              </div>
-              <div class="inner-div">
-                <p class="contentStep">STEP 4</p>
-                <p class="contentDetail">SUMMARY</p>
-              </div>
-            </div>
-          </li>
-        </ul>
+            <li>
+                <div class="nav-container-detail">
+                    <button class="nav-btn">4</button>
+                    <div class="nav-btn-container">
+                    <p class="nav-btn-step">STEP 4</p>
+                    <p class="nav-btn-title">SUMMARY</p>
+                    </div>
+                </div>
+            </li>
+            </ul>
+        </div>
       </div>
       <!-- Sidebar end -->
-  
-      <!-- Step 1 start -->
-
-      <!-- Step 1 end -->
-
-      <!-- Step 2 start -->
-      <!-- Step 2 end -->
-
-      <!-- Step 3 start -->
-      <!-- Step 3 end -->
 
       <div class="content-container">
-        <!-- Step 4 start -->
-        <div class="stepfour">
-          <div class="main-title-container">
-            <h1 class="main-title">Finishing up</h1>
-            <p class="main-desc">Double-check everything looks OK before confirming.</p>
-          </div>
-          <!-- Dynamically add subscription and add-on selections here -->
-          <div>
-            <div class="stepfour-container">
-              <div class="stepfour-plan-container">
-                <div class="stepfour-plan-name">
-                  <p>Arcade</p>
-                  <a href="" class="stepfour-plan-change">Change</a>
-                </div>
-                <div class="stepfour-plan-price">
-                  <p>9/mo</p>
-                </div>
-              </div>
-              <hr class="stepfour-hr">
-              <div class="stepfour-additional-container">
-                <p class="stepfour-additional-name">Online Service</p>
-                <p class="stepfour-additional-price">1/mo</p>
-              </div>
-            </div>
-            <div class="stepfour-total-container">
-              <div class="stepfour-total-name">
-                Total (per month/year)
-              </div>
-              <div class="stepfour-total-price">
-                +12/mo
-              </div>
-            </div>
-          </div>
-          <div class="btn-bottom-container">
-            <button class="btn-goback">Go Back</button>
-            <button class="btn-nextstep">Confirm</button>
-          </div>
-        </div>
-      </div>
-      <!-- Step 4 end -->
-    </div>
-    
-  </div>
-  <div style="display: none">
-    
-
-      <!-- Step 1 start -->
-      <div class="main-stepone">
-        <div class="main-title-container">
-          <h1 class="main-title">Personal info</h1>
-          <p class="main-desc">Please provide your name, email address, and phone number.</p>
-        </div>
-        <div>
-          <div>
-            <p>Name</p>
-            <input type="text" class="styleInput" placeholder="e.g. Stephen King"/>
-          </div>
-          <div>
-            <p>Email Address</p>
-            <input type="text" class="styleInput" placeholder="e.g. stephenking@lorem.com"/>
-          </div>
-          <div>
-            <p>Phone Number</p>
-            <input type="text" class="styleInput" placeholder="e.g. +1 234 567 890"/>
-          </div>
-        </div>
-        <div class="container-btn">
-          <button class="btn-nextstep">Next Step</button>
-        </div>
-      </div>
-      <!-- Step 1 end -->
-
       <!-- Step 2 start -->
       <!-- 2023-03-21, Step 2 -->
       <div class="steptwo">
@@ -200,6 +113,11 @@
         </div>
       </div>
       <!-- Step 2 end -->
+      </div>
+    </div>
+    
+  </div>
+  <div style="display: none">
     
       <!-- Step 3 start -->
       <!-- 2023-03-26, step 3 -->

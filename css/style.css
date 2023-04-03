@@ -1,0 +1,459 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+  text-align: left;
+  background-color: #ebf3fa;
+}
+
+.nav-btn-step {
+  opacity: 0.5;
+  font-size: 12px;
+  margin: 5px;
+  color: white;
+}
+
+.nav-btn-title {
+  font-size: 13px;
+  color: white;
+  margin: 0px;
+  padding: 5px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-family: 'Ubuntu-Bold';
+  
+}
+
+.nav-container-detail {
+  height: 40px;
+  width: 180px;
+  margin: 20px 10px 20px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-btn {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  float: left;
+  margin: 5px;
+  background-color: transparent;
+  border-color: white;
+  border-style: solid;
+  color: white;
+  border-width: 1px;
+}
+
+.nav-btn:hover{
+  background-color:skyblue;
+  color: black;
+}
+
+/* font assignment */
+p {
+  font-family: 'Ubuntu-Regular';
+  line-height: 70%;
+  font-size: 15px;
+}
+@font-face {
+  font-family: "Ubuntu-Regular";
+  src: url("../assets/fonts/Ubuntu-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu-Bold";
+  src: url("../assets/fonts/Ubuntu-Bold.ttf");
+}
+
+/* test */
+.main-container {
+  width: 900px;
+  height: 610px;
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.navigator-container {
+  height: 600px;
+  width: 250px;
+}
+
+.navigator {
+  display: inline-block;
+  vertical-align: top;
+  background: url("../assets/images/bg-sidebar-desktop.svg") no-repeat;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  background-size: 90%;
+  margin: 15px;
+}
+
+/* 2023-03-21, sypark, added step2 css */
+
+.main-stepone {
+  width: 600px;
+  margin: 50 150 50 50;
+}
+
+.main-steptwo {
+  width: 600px;
+  margin: 50 150 50 50;
+}
+
+.btn-steptwo{
+  border-style: solid;
+  border-color: #C2C5CC;
+  border-radius: 10px;
+  border-width: 1px;
+  background-color: white;
+  height: 180px;
+  width: 150px;
+  text-align: left;
+  padding: 20px;
+}
+
+.btn-steptwo:hover {
+  background-color: lavender;
+  border-color: purple;
+}
+
+.btn-steptwo-name {
+  font-weight: bold;
+  color: navy;
+  font-size: 16px;
+}
+
+.btn-steptwo-price {
+  font-size: 12px;
+  color: #C2C5CC;
+}
+
+.toggleSwitch-text {
+  margin: auto 10px;
+}
+
+.toggleSwitch {
+  width: 40px;
+  height: 20px;
+  display: block;
+  position: relative;
+  border-radius: 30px;
+  background-color: navy;
+  cursor: pointer;
+  margin: auto 10px;
+}
+
+.toggleSwitch .toggleButton {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: white;
+}
+
+#toggle:checked ~ .toggleSwitch {
+  background: navy;
+}
+
+#toggle:checked ~ .toggleSwitch .toggleButton {
+  left: calc(100% - 20px);
+  background: white;
+}
+
+.toggleSwitch, .toggleButton {
+  transition: all 0.2s ease-in;
+}
+
+.btn-steptwo-toggle-wrap {
+  margin: 10px 0px 10px 0px;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #F0F0F0;
+  display: flex;
+  justify-content: center;
+}
+
+/* --- step 2 --- */
+
+/* 2023-03-26, sypark, added step3 css */
+.container-btnthree {
+  padding: 1px;
+  display: inline-block;
+}
+
+.btn-stepthree {
+  border-style: solid;
+  border-color: #C2C5CC;
+  border-radius: 10px;
+  border-width: 1px;
+  background-color: white;
+  height: 60px;
+  width: 500px;
+  padding: 10px;
+  margin: 10px 0px 10px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.btn-stepthree:hover {
+  background-color: lavender;
+  border-color: purple;
+}
+
+.btn-stepthree-name {
+  color: navy;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 10px;
+}
+
+.btn-stepthree-desc {
+  color: #C2C5CC;
+  font-size: 14px;
+  margin: 10px;
+}
+
+.btn-stepthree-price {
+  color: purple;
+  text-align: left;
+  margin: 10px;
+}
+
+.btn-stepthree-container-left {
+  text-align: left;
+  width: 90%;
+}
+
+
+/* --- step 3 --- */
+
+/* 2023-03-26, sypark, added step4 css */
+.stepfour-container {
+  background-color: #f8f9fe;
+  border-radius: 10px;
+  height: 200px;
+  padding: 10px;
+}
+
+.stepfour-plan-container {
+  color: navy;
+  font-size: 14px;
+  margin: 10px;
+  float: left;
+  width: 90%;
+  display: flex;
+}
+
+.stepfour-plan-name {
+  text-align: left;
+  font-weight: bold;
+  color: #1c1866;
+  font-size: 14px;
+  width: 90%;
+}
+
+.stepfour-plan-price {
+  color: #1c1866;
+  text-align: left;
+  font-weight: bold;
+  width: 10%;
+  display: flex;
+  align-items: center;
+}
+
+.stepfour-change {
+  color: gray;
+  margin: 0 auto;
+  text-align: left;
+  font-weight: normal;
+}
+
+.stepfour-additional-container {
+  color: grey;
+  font-size: 14px;
+  margin: 10px;
+  float: left;
+  width: 90%;
+  display: flex;
+}
+
+.stepfour-additional-name {
+  text-align: left;
+  font-weight: bold;
+  color: grey;
+  font-size: 14px;
+  width: 90%;
+}
+
+.stepfour-additional-price {
+  text-align: left;
+  font-weight: bold;
+  width: 10%;
+  align-items: center;
+}
+
+.stepfour-total-container {
+  float: left;
+  width: auto;
+  display: flex;
+  margin: 10px;
+  width: 90%;
+}
+
+.stepfour-total-name {
+  text-align: left;
+  font-weight: bold;
+  color: #C2C5CC;
+  font-size: 14px;
+  width: 90%;
+}
+
+.stepfour-total-price {
+  text-align: left;
+  font-weight: bold;
+  color: #625aff;
+  width: 10%;
+  align-items: center;
+}
+
+.stepfour-hr {
+  width: 100%;
+  color: #C2C5CC;
+  border-style: solid;
+  border-width: 0.1px;
+  margin: 0px;
+}
+
+/* --- step 4 --- */
+
+.main-title-container {
+  margin-bottom: 50px;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 10px;
+  width: 70%;
+}
+
+.styleInput {
+  border-radius: 5px;
+  height: 40px;
+  width: 400px;
+  text-indent: 10px;
+  outline: 2px solid rgb(173, 173, 173);
+  border: none;
+}
+
+.container-btn {
+  margin: 120px 100px 100px 310px;
+}
+
+.btn-bottom-container {
+  position: relative;
+  height: 30%;
+}
+
+.btn-nextstep {
+  background-color: #483eff;
+  color: white;
+  border-radius: 10px;
+  height: 30px;
+  width: 100px;
+  border-style: solid;
+  border-width: 1px;
+  border: none;
+  float: right;
+  vertical-align: bottom;
+  position:absolute; 
+  bottom:0px;
+  right: 0px;
+  font-family: 'Ubuntu-Regular';
+}
+
+.btn-goback {
+  background-color: transparent;
+  color: gray;
+  border-radius: 10px;
+  height: 30px;
+  width: 100px;
+  border-width: 1px;
+  border-style: solid;
+  float: left;
+  vertical-align: bottom;
+  position:absolute; 
+  bottom:0px;
+  left: 0px;
+  font-family: 'Ubuntu-Regular';
+}
+
+.main-title {
+  font-family: 'Ubuntu-Bold';
+  color: navy;
+  margin: 10px 0px 10px 0px;
+}
+
+.main-desc {
+  color: #C2C5CC;
+  margin: 0;
+}
+
+.content-container {
+  margin: 20px 20px 20px 60px;
+}
+
+.stepfive-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px;
+}
+
+.stepfive-icon {
+  width: auto;
+  height: auto;
+}
+
+.stepfive-title {
+  font-family: 'Ubuntu-Bold';
+  color: navy;
+  text-align: center;
+  font-weight: 900;
+}
+
+.stepfive-desc {
+  font-size: 15px;
+  font-family: 'Ubuntu-Regular';
+  color:rgb(173, 173, 173);
+  text-align: center;
+  margin: 10px;
+  line-height: 25px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  height: 750px;
+  font-family: 'Ubuntu-Regular';
+}
+
+.nav-btn-container {
+  float: right;
+  width: 120px;
+  margin: 5px;
+}
