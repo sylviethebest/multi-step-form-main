@@ -6,6 +6,41 @@ body {
   background-color: #ebf3fa;
 }
 
+/* --- font start --- */
+p {
+  font-family: 'Ubuntu-Regular';
+  line-height: 70%;
+  font-size: 15px;
+}
+@font-face {
+  font-family: "Ubuntu-Regular";
+  src: url("../assets/fonts/Ubuntu-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu-Bold";
+  src: url("../assets/fonts/Ubuntu-Bold.ttf");
+}
+/* --- font end --- */
+
+/* --- navigator start --- */
+.navigator-container {
+  height: 600px;
+  width: 250px;
+}
+
+.navigator {
+  display: inline-block;
+  vertical-align: top;
+  background: url("../assets/images/bg-sidebar-desktop.svg") no-repeat;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  background-size: 100%;
+  margin: 15px;
+}
+
 .nav-btn-step {
   opacity: 0.5;
   font-size: 12px;
@@ -51,54 +86,65 @@ body {
   color: black;
 }
 
-/* font assignment */
-p {
-  font-family: 'Ubuntu-Regular';
-  line-height: 70%;
-  font-size: 15px;
+.nav-btn-container {
+  float: right;
+  width: 120px;
+  margin: 5px;
 }
-@font-face {
-  font-family: "Ubuntu-Regular";
-  src: url("../assets/fonts/Ubuntu-Regular.ttf");
-}
+/* --- navigator end --- */
 
-@font-face {
-  font-family: "Ubuntu-Bold";
-  src: url("../assets/fonts/Ubuntu-Bold.ttf");
-}
-
-/* test */
+/* --- main start --- */
 .main-container {
   width: 900px;
-  height: 610px;
+  height: 550px;
   display: flex;
   background-color: #ffffff;
   border-radius: 10px;
 }
 
-.navigator-container {
-  height: 600px;
-  width: 250px;
+.main-title {
+  font-family: 'Ubuntu-Bold';
+  color: navy;
+  margin: 10px 0px 10px 0px;
+  font-size: 28px;
 }
 
-.navigator {
-  display: inline-block;
-  vertical-align: top;
-  background: url("../assets/images/bg-sidebar-desktop.svg") no-repeat;
-  background-repeat: no-repeat;
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-  background-size: 90%;
-  margin: 15px;
+.main-desc {
+  color: #C2C5CC;
+  margin: 0;
 }
 
+.content-container {
+  margin: 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  height: 750px;
+  font-family: 'Ubuntu-Regular';
+}
+/* --- main end --- */
+
+
+/* --- step 1 start --- */
 /* 2023-03-21, sypark, added step2 css */
-
-.main-stepone {
-  width: 600px;
-  margin: 50 150 50 50;
+.stepone-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100%;
 }
+
+.stepone-container-content {
+  margin: 30px;
+}
+/* --- step 1 end --- */
+
+/* --- step 2 start --- */
 
 .main-steptwo {
   width: 600px;
@@ -183,9 +229,28 @@ p {
   justify-content: center;
 }
 
-/* --- step 2 --- */
+.steptwo-container {
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+}
+
+.steptwo-container-content {
+  margin: 30px;
+}
+
+/* --- step 2 end --- */
 
 /* 2023-03-26, sypark, added step3 css */
+/* --- step 3 start --- */
+.stepthree-wrapper {
+  margin: 30px;
+}
+
+.stepthree-container {
+  width: 450px;
+}
+
 .container-btnthree {
   padding: 1px;
   display: inline-block;
@@ -198,7 +263,7 @@ p {
   border-width: 1px;
   background-color: white;
   height: 60px;
-  width: 500px;
+  width: 100%;
   padding: 10px;
   margin: 10px 0px 10px 0px;
   display: flex;
@@ -234,9 +299,9 @@ p {
   width: 90%;
 }
 
+/* --- step 3 end --- */
 
-/* --- step 3 --- */
-
+/* --- step 4 start --- */
 /* 2023-03-26, sypark, added step4 css */
 .stepfour-container {
   background-color: #f8f9fe;
@@ -334,10 +399,11 @@ p {
   margin: 0px;
 }
 
-/* --- step 4 --- */
+/* --- step 4 end --- */
 
 .main-title-container {
-  margin-bottom: 50px;
+  margin: 0px;
+  height: 100%;
 }
 
 ul {
@@ -360,9 +426,11 @@ ul {
   margin: 120px 100px 100px 310px;
 }
 
+/* --- bottom button start --- */
 .btn-bottom-container {
-  position: relative;
-  height: 30%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
 }
 
 .btn-nextstep {
@@ -370,15 +438,12 @@ ul {
   color: white;
   border-radius: 10px;
   height: 30px;
-  width: 100px;
+  width: 180px;
   border-style: solid;
   border-width: 1px;
   border: none;
   float: right;
   vertical-align: bottom;
-  position:absolute; 
-  bottom:0px;
-  right: 0px;
   font-family: 'Ubuntu-Regular';
 }
 
@@ -387,32 +452,21 @@ ul {
   color: gray;
   border-radius: 10px;
   height: 30px;
-  width: 100px;
+  width: 180px;
   border-width: 1px;
   border-style: solid;
   float: left;
   vertical-align: bottom;
-  position:absolute; 
-  bottom:0px;
-  left: 0px;
   font-family: 'Ubuntu-Regular';
 }
 
-.main-title {
-  font-family: 'Ubuntu-Bold';
-  color: navy;
-  margin: 10px 0px 10px 0px;
+.btn-bottom-middle {
+  width: 100%;
 }
 
-.main-desc {
-  color: #C2C5CC;
-  margin: 0;
-}
+/* --- bottom button end --- */
 
-.content-container {
-  margin: 20px 20px 20px 60px;
-}
-
+/* --- step 5 start --- */
 .stepfive-container {
   display: flex;
   justify-content: center;
@@ -441,19 +495,4 @@ ul {
   margin: 10px;
   line-height: 25px;
 }
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: auto;
-  height: 750px;
-  font-family: 'Ubuntu-Regular';
-}
-
-.nav-btn-container {
-  float: right;
-  width: 120px;
-  margin: 5px;
-}
+/* --- step 5 end --- */

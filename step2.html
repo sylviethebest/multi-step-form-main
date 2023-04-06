@@ -18,101 +18,110 @@
       <!-- Sidebar start -->
       <div class="navigator-container">
         <div class="navigator">
-            <ul>
+          <ul>
             <li>
-                <div class="nav-container-detail">
-                    <button class="nav-btn">1</button>
-                    <div class="nav-btn-container">
+              <div class="nav-container-detail">
+                  <button class="nav-btn" onclick="location.href='step1.html'">1</button>
+                  <div class="nav-btn-container">
                     <p class="nav-btn-step">STEP 1</p>
                     <p class="nav-btn-title">YOUR INFO</p>
-                    </div>
-                </div>
+                  </div>
+              </div>
             </li>
 
             <li>
-                <div class="nav-container-detail">
-                    <button class="nav-btn">2</button>
-                    <div class="nav-btn-container">
-                        <p class="nav-btn-step">STEP 2</p>
-                        <p class="nav-btn-title">SELECT PLAN</p>
-                    </div>
-                </div>
+              <div class="nav-container-detail">
+                  <button class="nav-btn" onclick="location.href='step2.html'">2</button>
+                  <div class="nav-btn-container">
+                      <p class="nav-btn-step">STEP 2</p>
+                      <p class="nav-btn-title">SELECT PLAN</p>
+                  </div>
+              </div>
             </li>
 
             <li>
-                <div class="nav-container-detail">
-                <button class="nav-btn">3</button>
+              <div class="nav-container-detail">
+                <button class="nav-btn" onclick="location.href='step3.html'">3</button>
                 <div class="nav-btn-container">
-                    <p class="nav-btn-step">STEP 3</p>
-                    <p class="nav-btn-title">ADD-ONS</p>
+                  <p class="nav-btn-step">STEP 3</p>
+                  <p class="nav-btn-title">ADD-ONS</p>
                 </div>
-                </div>
+              </div>
             </li>
 
             <li>
-                <div class="nav-container-detail">
-                    <button class="nav-btn">4</button>
-                    <div class="nav-btn-container">
+              <div class="nav-container-detail">
+                  <button class="nav-btn" onclick="location.href='step4.html'">4</button>
+                  <div class="nav-btn-container">
                     <p class="nav-btn-step">STEP 4</p>
                     <p class="nav-btn-title">SUMMARY</p>
-                    </div>
-                </div>
+                  </div>
+              </div>
             </li>
-            </ul>
+          </ul>
         </div>
       </div>
       <!-- Sidebar end -->
 
       <div class="content-container">
-      <!-- Step 2 start -->
-      <!-- 2023-03-21, Step 2 -->
-      <div class="steptwo">
-        <div class="main-title-container">
-          <h1 class="main-title">Select your plan</h1>
-          <p class="main-desc">You have the option of monthly or yearly billing.</p>
-        </div>
-        <div>
-          <div>
-            <button class="btn-steptwo">
-              <div>
-                <img src="assets/images/icon-arcade.svg"/>
-                <div style="height: 40px;"></div>
-                <p class="btn-steptwo-name">Arcade</p>
-                <p class="btn-steptwo-price">$9/mo</p>
-              </div>
-            </button>
-            <button class="btn-steptwo">
-              <div>
-                <img src="assets/images/icon-advanced.svg"/>
-                <div style="height: 40px;"></div>
-                <p class="btn-steptwo-name">Advanced</p>
-                <p class="btn-steptwo-price">$12/mo</p>
-              </div>
-            </button>
-            <button class="btn-steptwo">
-              <div>
-                <img src="assets/images/icon-pro.svg"/>
-                <div style="height: 40px;"></div>
-                <p class="btn-steptwo-name">Pro</p>
-                <p class="btn-steptwo-price">$15/mo</p>
-              </div>
-            </button>
+        <!-- Step 2 start -->
+        <!-- 2023-03-21, Step 2 -->
+        <div class="steptwo-container">
+          <div class="main-title-container">
+            <h1 class="main-title">Select your plan</h1>
+            <p class="main-desc">You have the option of monthly or yearly billing.</p>
           </div>
-          <div class="btn-steptwo-toggle-wrap">
-            <p class="toggleSwitch-text">Monthly</p>
-            <input type="checkbox" id="toggle" hidden> 
-            <label for="toggle" class="toggleSwitch">
-              <span class="toggleButton"></span>
-            </label>
-            <p class="toggleSwitch-text">Yearly</p>
+          <div class="steptwo-container-content">
+            <div style="
+            margin: 20px 0px 20px 0px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: nowrap;
+        ">
+              <button class="btn-steptwo">
+                <div>
+                  <img src="assets/images/icon-arcade.svg"/>
+                  <div style="height: 40px;"></div>
+                  <p class="btn-steptwo-name">Arcade</p>
+                  <p class="btn-steptwo-price">$9/mo</p>
+                </div>
+              </button>
+              <div class="btn-bottom-middle"></div>
+              <button class="btn-steptwo">
+                <div>
+                  <img src="assets/images/icon-advanced.svg"/>
+                  <div style="height: 40px;"></div>
+                  <p class="btn-steptwo-name">Advanced</p>
+                  <p class="btn-steptwo-price">$12/mo</p>
+                </div>
+              </button>
+              <div class="btn-bottom-middle"></div>
+              <button class="btn-steptwo">
+                <div>
+                  <img src="assets/images/icon-pro.svg"/>
+                  <div style="height: 40px;"></div>
+                  <p class="btn-steptwo-name">Pro</p>
+                  <p class="btn-steptwo-price">$15/mo</p>
+                </div>
+              </button>
+            </div>
+            <div class="btn-steptwo-toggle-wrap">
+              <p class="toggleSwitch-text">Monthly</p>
+              <input type="checkbox" id="toggle" hidden> 
+              <label for="toggle" class="toggleSwitch">
+                <span class="toggleButton"></span>
+              </label>
+              <p class="toggleSwitch-text">Yearly</p>
+            </div>
+          </div>
+          <div class="btn-bottom-container">
+            <button class="btn-goback">Go Back</button>
+            <div class="btn-bottom-middle"></div>
+            <button class="btn-nextstep">Next Step</button>
           </div>
         </div>
-        <div class="btn-bottom-container">
-          <button class="btn-goback">Go Back</button>
-          <button class="btn-nextstep">Next Step</button>
-        </div>
-      </div>
-      <!-- Step 2 end -->
+        <!-- Step 2 end -->
       </div>
     </div>
     
